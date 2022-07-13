@@ -1,0 +1,17 @@
+<div class="pokemon-wrapper">
+
+  <!-- <app-pokemon-detail [selectedPokemon]="pokemonDetail$ | async"
+                        (addToTeam)="addPokemonToTeam($event)"></app-pokemon-detail> -->
+
+  <app-pokemon-detail [selectedPokemon]="selectedPokemon$ | async"></app-pokemon-detail>
+
+  <app-pokemon-list [pokemonList]="pokemonList$ | async"
+                    (emitSelectedPokemon)="requestPokemonDetail($event)"></app-pokemon-list>
+</div>
+
+<div class="pokemon-team-wrapper">
+  <!-- <app-pokemon-team [currentPokemonTeam]="currentPokemonTeam"
+                      (removeFromTeam)="removePokemonFromTeam($event)"></app-pokemon-team> -->
+  <app-pokemon-team [currentPokemonTeam]=""></app-pokemon-team>
+
+</div>

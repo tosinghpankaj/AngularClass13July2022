@@ -1,0 +1,6 @@
+<div class="container">
+  <app-home-card *ngFor="let card of homeCardsData"
+                 (click)="navigate(card.title)"
+                 title="{{ card.title }}"
+                 icon="{{ card?.icon ? card.icon : 'science' }}"></app-home-card>
+</div>

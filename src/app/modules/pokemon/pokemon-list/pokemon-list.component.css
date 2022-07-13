@@ -1,0 +1,66 @@
+/* pokemon-list */
+.pokemon-list {
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  box-shadow: 0 0 7px 0px lightgrey;
+  width: 12rem;
+  height: 25rem;
+  overflow-y: scroll;
+
+}
+
+/* nested in .pokemon-list */
+.pokemon-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.pokemon-list li {
+  list-style-type: none;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.pokemon-list button {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  border-top: 1px solid hsl(0, 0%, 83%);
+  background-color: inherit;
+}
+
+.pokemon-list button:focus {
+  outline: black solid 1px;
+  background-color: hsl(0, 0%, 82%);
+}
+
+.pokemon-list button:nth-of-type(1) {
+  border-top: none;
+}
+
+.pokemon-list button:hover {
+  background-color: hsl(0, 0%, 82%);
+}
+
+.pokemon-list button.highlight {
+  background-color: #006ae4;
+  color: white;
+  font-weight: bold;
+}
+
+/* end nest */
+.component-header.app-pokemon-list {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .pokemon-list {
+    width: 23rem;
+  }
+}

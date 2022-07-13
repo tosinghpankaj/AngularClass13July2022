@@ -1,0 +1,32 @@
+/* pokemon-team-member */
+.pokemon-team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* nested in pokemon-team-member */
+.pokemon-team-member img {
+  max-width: 5rem;
+}
+
+.pokemon-team-member button {
+  font-family: inherit;
+  font-weight: bold;
+  background-color: #006ae4;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid black;
+  outline: white;
+  cursor: pointer;
+}
+
+.pokemon-team-member button:focus {
+  outline: black solid 1px;
+  background-color: #0059be;
+}
+
+.pokemon-team-member span {
+  text-transform: capitalize;
+}
